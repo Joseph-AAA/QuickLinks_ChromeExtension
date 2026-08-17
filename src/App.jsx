@@ -21,8 +21,8 @@ function App(){
        <div className="absolute right-5 top-5">
           <WeatherWidget />
         </div>
-      <main className="w-full  flex flex-col justify-center items-center mt-45 md:mt-0 gap-7">
-          <h1 className="text-center text-white drop-shadow-[0_3px_8px_rgba(0,0,0,1)] text-5xl md:text-6xl lg:text-7xl font-bold">
+      <main className="w-full  flex flex-col justify-center items-center mt-45  gap-7">
+          <h1 className="text-center text-white drop-shadow-[0_3px_8px_rgba(0,0,0,1)]  text-3xl sm:text-4xl lg:text-6xl font-bold">
             Good {new Date().getHours() > 12 ? "Evening" : "Morning" }, Developer</h1>
             <div className="w-full mt-7">
               <SearchBox />

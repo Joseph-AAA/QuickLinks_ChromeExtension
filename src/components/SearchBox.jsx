@@ -7,8 +7,8 @@ function SearchBox() {
                     name="q"
                     autoFocus type="text" 
                     placeholder="Search anything" 
-                    className=" rounded-4xl p-5 shadow-[0_4px_10px_rgba(0,0,0,1)] text:md md:text-xl w-[90%] md:w-3xl lg:w-full max-w-5xl
-                     text-white border-2 border-amber-300 bg-[rgba(255,255,255,0.2)] h-16 " />
+                    className=" rounded-4xl p-5 shadow-[0_4px_10px_rgba(0,0,0,1)] text:md md:text-xl w-[80%]  max-w-5xl
+                     text-white border-2 border-amber-300 bg-[rgba(255,255,255,0.2)] h-14 " />
         </form>
     )
 }
