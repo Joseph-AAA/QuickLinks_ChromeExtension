@@ -44,7 +44,7 @@ useEffect(() => {
             {
                 links.map((link)=>{
                     return(
-                        <a href={link.url}  key={link.id} className="group relative w-32 h-32 rounded-2xl hover:bg-gray-400
+                        <a href={link.url}  key={link.id} className="group relative w-24 h-24 rounded-2xl hover:bg-gray-400
                                                             justify-center items-center flex flex-col ">
                                
                                 <IoCloseCircleOutline 
@@ -52,16 +52,16 @@ useEffect(() => {
                                     onClick={(e)=> { e.preventDefault();
                                                     e.stopPropagation();
                                                     deleteButton(link.id)}} 
-                                        className="hidden bg-red-400 rounded-full group-hover:block  w-8 h-8 hover:cursor-pointer  absolute -right-3 -top-3 text-white" />
+                                        className="hidden bg-red-400 rounded-full group-hover:block  w-5 h-5 hover:cursor-pointer  absolute -right-2 -top-2 text-white" />
                                
-                                <div className="overflow-hidden w-15 h-15 text-4xl bg-gray-100  shadow-[0_4px_10px_rgba(0,0,0,0.5)]
+                                <div className="overflow-hidden w-12 h-12 text-4xl bg-gray-100  shadow-[0_4px_10px_rgba(0,0,0,0.5)]
                                                     grid justify-center items-center
                                                     hover:cursor-pointer rounded-full">
                                     <img  src={`https://www.google.com/s2/favicons?domain=${link.url}`} 
                                          alt = {link.name}
-                                         className = "w-8 rounded-xl hover:cursor-pointer"/>
+                                         className = "w-6 rounded-xl hover:cursor-pointer"/>
                                 </div>
-                            <span className="font-bold mt-2 text-center truncate w-[95%] text-white drop-shadow-[0_3px_8px_rgba(0,0,0,1)]">{link.name}</span>
+                            <span className="mt-2 text-center text-sm truncate w-[95%] text-white drop-shadow-[0_3px_8px_rgba(0,0,0,1)]">{link.name}</span>
                         </a>
                         
                 )
@@ -69,13 +69,13 @@ useEffect(() => {
             })
         }
 
-            <a onClick={() => setAdded(true)} className="w-32 h-32 rounded-2xl hover:bg-gray-400 justify-center items-center 
+            <a onClick={() => setAdded(true)} className="w-24 h-24 rounded-2xl hover:bg-gray-400 justify-center items-center 
                         flex flex-col hover:cursor-pointer">
-                    <div className="w-15 h-15 text-4xl grid justify-center items-center shadow-[0_4px_10px_rgba(0,0,0,0.5)]
+                    <div className="w-12 h-12 text-4xl grid justify-center items-center shadow-[0_4px_10px_rgba(0,0,0,0.5)]
                                         hover:cursor-pointer bg-gray-100  rounded-full">
-                        <FaPlus className="text-gray-400  w-8 h-8 hover:cursor-pointer"/>
+                        <FaPlus className="text-gray-400  w-5 h-5 hover:cursor-pointer"/>
                     </div>
-                    <span className="font-bold mt-2 text-white drop-shadow-[0_3px_8px_rgba(0,0,0,1)]">Add Shortcut</span>
+                    <span className="text-sm mt-2 text-white drop-shadow-[0_3px_8px_rgba(0,0,0,1)]">Add Shortcut</span>
                     
             </a>
                    
