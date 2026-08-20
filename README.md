@@ -1,16 +1,52 @@
-# React + Vite
+🚀 Launchpad — Chrome Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A custom Chrome New Tab extension built with React, Vite, and Tailwind CSS. Launchpad replaces Chrome's default New Tab page with a clean, personalized dashboard.
 
-Currently, two official plugins are available:
+✨ Features
+🕐 Dynamic Greeting
+Displays "Good Morning" or "Good Evening" based on the current time.
+🌤️ Weather Widget
+Fetches current weather data using the Open-Meteo API.
+Displays:
+Current temperature
+Day/night condition
+Weather icons based on weather codes
+Location information
+🔗 Quick Links
+Add your own shortcuts.
+Automatically displays website favicons.
+Open saved websites directly from the New Tab page.
+Delete shortcuts when they are no longer needed.
+Saves shortcuts using localStorage.
+🖼️ Dynamic Background
+Fetches a random wallpaper from the Unsplash API.
+🔍 Search
+Search the web directly from the Launchpad New Tab page.
+📱 Responsive Design
+Works across desktop, tablet, and mobile screen sizes.
+🛠️ Built With
+React
+JavaScript
+Vite
+Tailwind CSS
+Open-Meteo API
+Unsplash API
+React Icons
+LocalStorage
+Chrome Extension Manifest V3
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+📂 Project Structure
+Launchpad_Chrome_Ext/
+├── public/
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── QuickLink.jsx
+│   │   ├── QuickLinkForm.jsx
+│   │   ├── SearchBox.jsx
+│   │   └── WeatherWidget.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
