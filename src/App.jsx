@@ -16,7 +16,7 @@ function App(){
     },[])
     
   return(
-    <div className="flex flex-col justify-center items-center min-h-lvh  "  style={{ backgroundImage: `url(${img?.urls.full})` }}>
+    <div className="flex flex-col justify-center items-center min-h-lvh  "  style={{ backgroundImage: img ? `url(${img.urls.full})` : "none" }}>
       
        <div className="absolute right-5 top-5">
           <WeatherWidget />

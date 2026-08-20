@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Launchpad",
+  "version": "1.0.0",
+  "description": "My personal Chrome launchpad",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

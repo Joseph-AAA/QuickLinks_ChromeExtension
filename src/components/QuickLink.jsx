@@ -44,15 +44,15 @@ useEffect(() => {
             {
                 links.map((link)=>{
                     return(
-                        <a href={link.url}  key={link.id} className="group relative w-24 h-24 rounded-2xl hover:bg-gray-400
-                                                            justify-center items-center flex flex-col ">
+                        <a href={link.url}  key={link.id} className="group relative w-24 h-24 rounded-2xl hover:bg-gray-400 
+                                                            bg-gray-400 sm:bg-transparent justify-center items-center flex flex-col ">
                                
                                 <IoCloseCircleOutline 
                                   
                                     onClick={(e)=> { e.preventDefault();
                                                     e.stopPropagation();
                                                     deleteButton(link.id)}} 
-                                        className="hidden bg-red-400 rounded-full group-hover:block  w-5 h-5 hover:cursor-pointer  absolute -right-2 -top-2 text-white" />
+                                        className="block sm:hidden bg-red-400 rounded-full group-hover:block  w-5 h-5 hover:cursor-pointer  absolute -right-2 -top-2 text-white" />
                                
                                 <div className="overflow-hidden w-12 h-12 text-4xl bg-gray-100  shadow-[0_4px_10px_rgba(0,0,0,0.5)]
                                                     grid justify-center items-center
